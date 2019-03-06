@@ -11,6 +11,7 @@ services:
       - "443:443"
     links: 
       - mysql
+      - maildev
     volumes: 
       - ${DOCUMENT_ROOT-./www}:/var/www/html
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/php.ini
@@ -30,3 +31,10 @@ services:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
+  maildev:
+    image: djfarrelly/maildev
+    container_name: 'mail-server-dev'
+    restart: 'always'
+    ports:
+      - "1080:80"
+      - "1025:25"
