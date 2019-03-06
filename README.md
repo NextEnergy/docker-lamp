@@ -1,4 +1,4 @@
-# Docker LAMP Development v1.0.2
+# Docker LAMP Development v1.1.0
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -7,6 +7,7 @@ A very basic LAMP stack environment for development. It was built using Docker C
 * [PHP 5.6](https://hub.docker.com/_/php)
 * [Apache 2.4](https://hub.docker.com/_/httpd)
 * [MySQL 5.7](https://hub.docker.com/_/mysql)
+* [MailDev 1.0.0-rc3](https://github.com/djfarrelly/MailDev)
 
 For **PHP 7.3** you can change to the branch [master](https://github.com/andreipa/docker-lamp/tree/master)
 
@@ -101,6 +102,14 @@ By default following extensions are installed.
 * zip
 
 > If you want to install more extension, just update `./bin/webserver/Dockerfile`.
+
+### MailDev
+
+MailDev is a simple way to test your project's generated emails during development with an easy to use web interface that runs on your machine built on top of [Node.js](https://nodejs.org/en/).
+
+```shell
+http://localhost:1080
+```
 
 ## Built With
 
