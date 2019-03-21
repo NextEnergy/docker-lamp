@@ -20,7 +20,7 @@ services:
   mysql:
     build: ./bin/mysql
     container_name: '5.7.x-mysql-dev'
-    command: --lower_case_table_names=1 --hostname localhost --sql_mode=""
+    command: --lower_case_table_names=1 --sql_mode=""
     restart: 'always'
     ports:
       - "3306:3306"
