@@ -7,7 +7,7 @@ A very basic LAMP stack environment for development. It was built using Docker C
 * [PHP 5.6](https://hub.docker.com/_/php)
 * [Apache 2.4](https://hub.docker.com/_/httpd)
 * [MySQL 5.7](https://hub.docker.com/_/mysql)
-* [MailDev 1.0.0-rc3](https://github.com/djfarrelly/MailDev)
+* [MailDev 1.0.0](https://github.com/djfarrelly/MailDev)
 
 For **PHP 7.3** you can change to the branch [master](https://github.com/andreipa/docker-lamp/tree/master)
 
@@ -113,8 +113,9 @@ http://localhost:1080
 
 ## Built With
 
-* Debian
-* Composer
+* [Debian](https://www.debian.org/)
+* [Composer](https://getcomposer.org/)
+* [MailDev](https://github.com/djfarrelly/MailDev)
 
 ## Using this LAMP stack to host a website
 
