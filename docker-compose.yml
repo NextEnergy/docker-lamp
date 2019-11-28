@@ -11,7 +11,6 @@ services:
       - "443:443"
     links: 
       - mysql
-      - maildev
     networks:
       - lamp-net
     volumes: 
@@ -35,15 +34,6 @@ services:
       - MYSQL_ROOT_PASSWORD=${DB_ROOT_PASSWORD}
       - MYSQL_USER=${DB_USER}
       - MYSQL_PASSWORD=${DB_PASSWORD}
-  maildev:
-      image: djfarrelly/maildev
-      container_name: 'mail-server'
-      restart: 'always'
-      ports:
-        - "1080:80"
-        - "1025:25"
-      networks:
-        - lamp-net
 networks:
   lamp-net:
     name: lamp-global-net
