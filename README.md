@@ -1,4 +1,4 @@
-# Docker LAMP Development v1.1.0
+# Docker LAMP Development v1.1.1
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -7,9 +7,6 @@ A very basic LAMP stack environment for development. It was built using Docker C
 * [PHP 7.3](https://hub.docker.com/_/php)
 * [Apache 2.4](https://hub.docker.com/_/httpd)
 * [MySQL 8.0](https://hub.docker.com/_/mysql)
-* [MailDev 1.0.0](https://github.com/djfarrelly/MailDev)
-
-For **PHP 5.6** you can change to the branch [php-5](https://github.com/andreipa/docker-lamp/tree/php-5)
 
 ## Getting Started
 
@@ -32,7 +29,7 @@ In order to run this container you'll need docker installed.
 
 Clone this repository on your local computer and run the docker compose on your terminal.
 ```shell
-git clone https://github.com/andreipa/docker-lamp
+git clone https://github.com/NextEnergy/docker-lamp
 cd docker-lamp/
 git fetch --all
 docker-compose up -d --build
@@ -102,20 +99,11 @@ By default following extensions are installed.
 
 > If you want to install more extension, just update `./bin/webserver/Dockerfile`.
 
-### MailDev
-
-MailDev is a simple way to test your project's generated emails during development with an easy to use web interface that runs on your machine built on top of [Node.js](https://nodejs.org/en/).
-
-```shell
-http://localhost:1080
-```
-
 ## Built With
 
 * [Debian](https://www.debian.org/)
 * [Composer](https://getcomposer.org/)
 * [Browscap](https://browscap.org/)
-* [MailDev](https://github.com/djfarrelly/MailDev)
 
 ## Using this LAMP stack to host a website
 
