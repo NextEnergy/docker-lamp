@@ -116,7 +116,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the 
-[tags on this repository](https://github.com/andreipa/docker-lamp/tags). 
+[tags on this repository](https://github.com/NextEnergy/docker-lamp/tags).
 
 ## Author
 
